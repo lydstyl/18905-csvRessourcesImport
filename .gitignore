@@ -4,3 +4,4 @@ old
 *.csv
 .vscode
 .~lock*
+propertiesFilesGenerated/*

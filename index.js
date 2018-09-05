@@ -1,5 +1,6 @@
 /**
  * This script is used to transfome a .csv with key and value columns to properties files.
+ * Be carreful not to have any space in the column header of your .csv and to add the column name in opts.propertiesLang
  * For better result, sort the .csv before using this script.
  * 
  * 
