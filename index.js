@@ -1,6 +1,7 @@
 /**
  * This script is used to transfome a .csv with key and value columns to properties files.
  * Be carreful not to have any space in the column header of your .csv and to add the column name in opts.propertiesLang
+ * You have to add the folder propertiesFilesGenerated in the root directory
  * For better result, sort the .csv before using this script.
  * 
  * 
@@ -95,7 +96,7 @@ function makePropertiesFiles(propFiles){
  */
 function strToFile(str, fileName) {
     str = '# Made with the Node.js script 18904-csvRessourcesImport <gbrun@altima-agency.com>\n' + str;
-    fileName = fileName + opts.propertiesLang + '.properties';
+    fileName = fileName + '_' + opts.propertiesLang + '.properties';
     fs.writeFile(opts.folderToWriteFilesIn + '/' + fileName, str, err => {
         if(err) {
             return console.log(err);
